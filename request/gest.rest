@@ -1,0 +1,38 @@
+POST http://localhost:3001/api/telefono
+content-type: application/json
+
+{
+  "name": "Pedro Stone",
+  "number": "11 - 4546 - 456"
+}
+
+#########
+PUT http://localhost:3001/api/telefono/644fdbde0ce705b701024501
+content-type: application/json
+
+{
+  "number": "11 - 45464444456"
+}
+#########
+DELETE http://localhost:3001/api/telefono/6451133469a27884454a6660
+
+#########
+
+get http://localhost:3001/api/telefono
+#########
+
+get http://localhost:3001/api/telefono/6446983c352d26f477d1ad44
+
+###
+
+get http://localhost:3001/api/telefono/644fdbde0ce705b701024501
+
+###
+
+get http://localhost:3001/api/telefono/644fdbde0ce705b7__01024501
+
+###
+
+get http://localhost:3001/api/tele/644fdbde0ce705b7__01024501
+
+###
