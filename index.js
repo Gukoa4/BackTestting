@@ -9,9 +9,9 @@
 const express = require('express')
 const cors = require("cors"); 
 const app = express()
+app.use(cors())
 
 require('dotenv').config()
-app.use(cors())
 const Telefono = require('./models/telefono')
 const PORT = process.env.PORT || 3002;
 app.use(express.static("dist"));
